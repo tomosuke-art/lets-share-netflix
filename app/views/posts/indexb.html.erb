@@ -1,8 +1,11 @@
 <header>
-    <div class="header-logo">
-      <%= link_to("TOP","/",class: "logox")%>
-    </div>
+    
     <div class="header-linklist">
+      <div class="header-logo">
+        <%= link_to "/"  do%>
+          <i class="fa fa-home fa-2x"></i>
+        <%end%>
+      </div>
       <div class="header-link1">
         <%= link_to("日本映画・ドラマ","indexa",class: "btn-y")%>
       </div>
@@ -17,7 +20,7 @@
 
 <div class="recommend">
   <h1>韓国映画・ドラマおすすめ一覧</h1>
-</div>
+  <hr>
  <div class="post-index">
   <div class="container">
     <% @postb.each do |post| %>
@@ -55,7 +58,7 @@
         <%= post.created_at.to_s(:datetime_jp) %>
        </div>
       </div>
-      <hr>
     <% end %>
   </div>
  </div>
+</div>

@@ -1,6 +1,8 @@
 <header>
     <div class="header-logo">
-      <%= link_to("TOP","/",class: "logox")%>
+      <%= link_to "/"  do%>
+        <i class="fa fa-home fa-2x"></i>
+      <%end%>
     </div>
      <div class="header-linklist">
       <div class="header-link1">
@@ -17,7 +19,7 @@
 
 <div class="recommend">
   <h1>海外ドラマおすすめ一覧</h1>
-</div>
+  <hr>
  <div class="post-index">
   <div class="container">
     <% @postc.each do |post| %>
@@ -55,7 +57,7 @@
         <%= post.created_at.to_s(:datetime_jp) %>
        </div>
       </div>
-      <hr>
     <% end %>
   </div>
  </div>
+</div>

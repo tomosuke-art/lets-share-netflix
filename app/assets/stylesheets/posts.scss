@@ -14,26 +14,32 @@
     margin-right: 10px;
     background-color:rgba(255, 255, 255, 0.3);
 }
+.header-link1:hover {
+    background-color:rgba(255, 255, 255, 0.5) ;
+}
 .header-link2{
     margin-right: 10px;
     background-color:rgba(255, 255, 255, 0.3)
+}
+.header-link2:hover {
+    background-color:rgba(255, 255, 255, 0.5) ;
 }
 .header-link3{
     margin-right: 10px;
     background-color:rgba(255, 255, 255, 0.3);
 }
 .btn-y {
-    line-height: 120px;
+    line-height: 60px;
     color:black;
     font-weight: bold;
     padding: 0 25px;
 }
 .recommend {
     margin-top:30px;
-    margin-bottom:30px;
-    border-bottom: solid;
+    
 }
 .recommend h1{
+    padding-top: 20px;
     font-weight: bold;
     font-size: 50px;
     text-align: center;
@@ -74,7 +80,11 @@
 .row {
     height:100%;
     width:100%;
-    margin-top: 40px 
+    background-color: rgb(243, 241, 241);
+    //margin-top: 40px 
+    box-shadow: 15px 15px 10px 1px rgba(58, 55, 55, 0.336);
+    margin-bottom: 40px;
+    border-radius: 10px;
     
 }
 .col-sm-5{
@@ -94,6 +104,7 @@
   }
 .user-linkx {
     text-align: left;
+    margin-top: 10px;
 }
 .user-linkname{
     text-decoration: none;
@@ -113,6 +124,7 @@
 
 .image-name{
     margin-top:15px;
+    margin-bottom: 15px;
     
 }
 .col-sm-7 {

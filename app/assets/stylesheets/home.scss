@@ -5,15 +5,23 @@
     box-sizing: border-box;
 }
 header {
-    height:120px;
-    background-color:rgb(241, 241, 217)
+    height:60px;
+    background-color:rgb(29, 33, 87)
    
 }
+.menu-icon {
+    color: white;
+    float: right;
+    font-size: 25px;
+    padding: 21px 0;
+    /* displayをnoneに指定してください */
+    display:none;
+  }
 .search {
     display: flex;
 }
 .nav-search {
-    margin-top: 45px;
+    margin-top: 10px;
     margin-left: 60%;
 }
 
@@ -46,7 +54,7 @@ header {
 }
 
 .login {
-    line-height: 120px;
+    line-height: 60px;
     padding:0 25px;
     color:black;
     display:block;
@@ -101,6 +109,9 @@ header {
     float:right;
     background-color:rgba(255, 255, 255, 0.3);
     padding: 0 25px;
+}
+.header-link4:hover {
+    background-color: rgba(255, 255, 255, 0.5);
 }
 .mypage-link{
     line-height: 120px;
@@ -160,7 +171,7 @@ header {
     font-family:fantasy;
     font-weight: bold;
 }
-.fa {
+.fa-home {
     color:rgb(230, 217, 214);
 
 }

@@ -1,8 +1,17 @@
+<div class="flash-container-x">
+   <% if flash[:success]%>
+          <div class="flash-success">
+            <%= flash[:success] %>
+          </div>
+   <% end %>
+</div>
 <header>
     <div class="header-logo">
-      <%= link_to("TOP","/",class: "logox")%>
+      <%= link_to "/"  do%>
+        <i class="fa fa-home fa-2x"></i>
+      <%end%>
     </div>
-  </header>
+</header>
   
 <div class="user-profile">
  <div class="mypage">
@@ -25,8 +34,11 @@
   <%end%>
   <hr>
   <h2 class="mypost">My Post</h2>
-  <% @posts.each do |post| %>
-   <div class="row">
+
+ <div class="post-index">
+  <div class="container">
+   <% @posts.each do |post| %>
+    <div class="row">
       <div class="col-sm-5">
         <div class="title-name">
           <%= post.title%>
@@ -58,10 +70,12 @@
           <%= link_to post_path(post.id), method: :delete  do%>
           <i class="fa fa-trash"></i> 
           <%end%>
-          
         <%end%>  
       </div>
      </div>
-     <hr>
- <% end %>
+   <% end %>
+  </div>
+ </div>
 </div>
+
+  

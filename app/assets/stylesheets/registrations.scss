@@ -1,6 +1,12 @@
 .logox{
     color:white;
 }
+.header-logo {
+    font-size: 25px;
+    
+    float:left;
+    padding:10px;
+}
 .signup-wrapper{
     height:800px;
     position: relative;
@@ -13,7 +19,8 @@
     font-family: fantasy;
     font-weight: bold;
     font-size: 40px;
-    color:rgb(126, 84, 84);
+    color:rgb(252, 149, 65);
+    
 }
 .signup-content {
     position: absolute;

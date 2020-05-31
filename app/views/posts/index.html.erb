@@ -1,11 +1,13 @@
 <header>
     <div class="header-logo">
-      <%= link_to("TOP","/",class: "logox")%>
-    </div>
+      <%= link_to "/"  do%>
+        <i class="fa fa-home fa-2x"></i>
+      <%end%>
+    </div>  
   </header>
 <div class="recommend">
   <h1>全ジャンルおすすめ一覧</h1>
-</div>
+  <hr>
  <div class="post-index">
   <div class="container">
     <% @posts.each do |post| %>
@@ -48,10 +50,10 @@
         <%= post.created_at.to_s(:datetime_jp) %>
       </div>
      </div>
-     <hr>
     <% end %>
   </div>
  </div>
+</div>
 
 
 
