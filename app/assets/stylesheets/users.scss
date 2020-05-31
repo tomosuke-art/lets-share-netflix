@@ -2,25 +2,29 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 .icon_image {
-    width: 200px;
-    height: 200px;
-    //サイズ指定
-    border-radius: 100px;
-    //画像を丸くする
-    object-fit: cover;
-    //タテヨコ比を変えないままトリミング
-  }
+  width: 200px;
+  height: 200px;
+  //サイズ指定
+  border-radius: 100px;
+  //画像を丸くする
+  object-fit: cover;
+  //タテヨコ比を変えないままトリミング
+}
 
 .user-profile {
-    text-align: center;
+  text-align: center;
 }
 .mypage{
-  font-family: fantasy;
+font-family: fantasy;
+text-align: center;
+}
+.mypage h1{
+margin-right: 80px;
 }
 .mypost{
-  font-family: fantasy;
-  color:rgb(113, 113, 189);
+font-family: fantasy;
+color:rgb(113, 113, 189);
 }
 .fa-trash {
-  color:rgb(53, 150, 241);
+color:rgb(53, 150, 241);
 }
