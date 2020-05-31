@@ -1,0 +1,67 @@
+<header>
+    <div class="header-logo">
+      <%= link_to("TOP","/",class: "logox")%>
+    </div>
+  </header>
+  
+<div class="user-profile">
+ <div class="mypage">
+  <h1>My Pages</h1>
+  <p> User Profile</p>
+ </div>
+  <hr>
+  <% if @user.image_name? %>
+     <img src=<%= @user.image_name %> class = "icon_image">
+  <% else %>
+    <img src="/assets/default.png" class="icon_image" alt="ユーザーアイコン" >
+  <% end %> 
+  <p><%= @user.user_name%></p>
+  <p><%= @user.email %></p>
+  <P><%= @user.introduce%></P>
+  <% if @user == current_user %>
+    <%= link_to edit_user_registration_path do%>
+    <i class="fas fa-user-edit"></i>
+    <%end%>
+  <%end%>
+  <hr>
+  <h2 class="mypost">My Post</h2>
+  <% @posts.each do |post| %>
+   <div class="row">
+      <div class="col-sm-5">
+        <div class="title-name">
+          <%= post.title%>
+        </div>
+        <div class="year-name">
+          <%= post.released_year%><span>年</span>
+        </div>
+        <div class="image-name">
+          <%= image_tag post.image_url  %>
+        </div>
+      </div>
+      <div class="col-sm-7">
+        <div class="content">
+          <p><span class="fa fa-comments-o"></span> あらすじ・感想 <span class="fa fa-comments-o"></span></p>
+          <%= post.summary%>
+        </div>
+        <div class="director-name">
+          <P><span class="fas fa-user-secret"></span> 監督名</P>
+          <%= post.director%>
+        </div>
+        <div class="cast">
+          <p><span class="fas fa-group"> キャスト名</p>
+          <%= post.cast%><br>
+          <%= post.casta%><br>
+          <%= post.castb%>
+        </div><br>
+        <%= post.created_at.to_s(:datetime_jp) %>
+        <% if post.user == current_user %>
+          <%= link_to post_path(post.id), method: :delete  do%>
+          <i class="fa fa-trash"></i> 
+          <%end%>
+          
+        <%end%>  
+      </div>
+     </div>
+     <hr>
+ <% end %>
+</div>

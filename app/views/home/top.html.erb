@@ -1,0 +1,89 @@
+<header>
+    <div class="header-logo">
+      <%= link_to("TOP","/",class: "logox")%>
+    </div>
+
+    <% if user_signed_in? %>
+      <div class="header-link3">
+       <%= link_to "logout",destroy_user_session_path, class: "nav-link" ,method: :delete %>
+      </div>
+      <div class="header-link4">
+       <%= link_to "My Page",user_path(current_user.id) ,class: "mypage-link"%>
+      </div>
+      <div class="search">
+         <div class="nav-search">
+             <%= form_tag({controller:"posts",action:"index"}, method: :get) do %>
+             <div class="input-group">
+               <%= text_field_tag :search ,'',placeholder:"タイトル名で検索",class:"form-control" %>
+               <span class="input-group-btn">
+                 <%= button_tag 'search' ,:name => nil, class: "btn btn-primary"  %>
+               </span>
+             </div>
+           <% end %>
+         </div>
+      </div>
+    <%else%>
+      <div class="header-right1">
+        <%= link_to("login",new_user_session_path,class: "login") %>
+      </div>
+      <div class="header-right2">
+        <%= link_to("sign-up",new_user_registration_path,class: "signin") %>
+      </div>
+       <div class="search">
+         <div class="nav-search">
+             <%= form_tag({controller:"posts",action:"index"}, method: :get) do %>
+             <div class="input-group">
+               <%= text_field_tag :search ,'',placeholder:"タイトル名で検索",class:"form-control" %>
+               <span class="input-group-btn">
+                 <%= button_tag 'search' ,:name => nil, class: "btn btn-primary"  %>
+               </span>
+             </div>
+           <% end %>
+         </div>
+       </div>
+    <%end%>
+</header>
+
+  <div class="main">
+   <div class="title">
+     <h1>Let`s Share My Favorite!</h1>
+     <p><span class="fa fa-home"></span>Stay Home<span class="fa fa-home"></span></p>
+     <h2>~<span class="sabtitle">Netflix</span>~</h2>
+   </div>
+  </div>
+    
+    <div class="lesson-wrapper">
+     <h1>Let`s See Everyone`s favorite！！</h1>
+     <div class="lesson-container">
+       <div class="lessons">
+        <img src="/assets/ogp.png" width=200 height=200>
+        <%= link_to("日本映画・ドラマ","/posts/indexa",class:"btn-horizontal-border" )%>
+       </div>
+       <div class="lessons">
+         <img src="assets/202004AahHU8LD8C.jpg" width=200 height=200>
+         <%= link_to("韓国映画・ドラマ","/posts/indexb",class: "btn-horizontal-border")%>
+       </div>
+       <div class="lessons">
+        <img src="/assets/ccbdfeea6b9b7101566cb54fc45497461b0fb6c2_large.jpg"
+        width="200" height=200>
+        <%= link_to("海外ドラマ","/posts/indexc",class: "btn-horizontal-border")%>
+       </div>
+       <div class="lessons">
+        <img src="/assets/51xDQ5oiZwL._AC_.jpg" width=200 height=200>
+        <%= link_to("海外映画","/posts/indexd",class: "btn-horizontal-border")%>
+       </div>
+      </div>
+    </div>
+    <div class="my-post">
+      <div class="my-postcontainer">
+         <div class="message">
+           <p>Tell me your favorite!!</p>
+           <%= link_to("私のおすすめを投稿！","/posts/new",{class: "btn-sf-like"})%>
+         </div>
+         <div class="allgenre">
+           <p>Let`s See All Genre!!</p>
+           <%= link_to("全てのジャンル","/posts/index",{class: "btn-sf-like"})%>
+         </div>
+      </div>
+    </div>
+    

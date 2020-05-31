@@ -1,0 +1,248 @@
+// Place all the styles related to the Post controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.header-logo {
+    color:white;
+}
+.header-linklist {
+    display:flex;
+    float:right;
+    line-height: 120px; 
+}
+
+.header-link1{
+    margin-right: 10px;
+    background-color:rgba(255, 255, 255, 0.3);
+}
+.header-link2{
+    margin-right: 10px;
+    background-color:rgba(255, 255, 255, 0.3)
+}
+.header-link3{
+    margin-right: 10px;
+    background-color:rgba(255, 255, 255, 0.3);
+}
+.btn-y {
+    line-height: 120px;
+    color:black;
+    font-weight: bold;
+    padding: 0 25px;
+}
+.recommend {
+    margin-top:30px;
+    margin-bottom:30px;
+    border-bottom: solid;
+}
+.recommend h1{
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+
+}
+.container{
+    margin-top:20px;
+    
+}
+.flash-container-x {
+    animation: fadeOut 4s ease 0s 1 forwards;
+}
+
+.flash-success {
+    padding: 10px 0;
+    color: white;
+    background: rgb(251, 170, 88);
+    text-align: center;
+    position: absolute;
+    top: 64px;
+    z-index: 10;
+    width: 100%;
+    border-radius: 0 0 2px 2px;
+    font-size: 14px;
+}
+@keyframes fadeOut { /*animetion-nameで設定した値を書く*/
+
+    0% {opacity: 1
+        
+    } /*アニメーション開始時は不透明度0%*/
+  
+    100% {opacity: 0
+        
+    
+    } /*アニメーション終了時は不透明度100%*/
+}  
+
+.row {
+    height:100%;
+    width:100%;
+    margin-top: 40px 
+    
+}
+.col-sm-5{
+    position: absolute;
+    top:50%;
+    text-align: center;
+  
+}
+.icon_imagex {
+    width: 40px;
+    height: 40px;
+    //サイズ指定
+    border-radius: 100px;
+    //画像を丸くする
+    object-fit: cover;
+    //タテヨコ比を変えないままトリミング
+  }
+.user-linkx {
+    text-align: left;
+}
+.user-linkname{
+    text-decoration: none;
+    color:black;
+    
+}
+.title-name {
+    font-size: 30px;
+    font-family:serif;
+    font-weight: bold;
+    
+}
+.year-name{
+    margin-top: 15px;
+}
+
+
+.image-name{
+    margin-top:15px;
+    
+}
+.col-sm-7 {
+    text-align: center;
+}
+.content {
+    background-color:rgb(221, 209, 209);
+    border-radius: 10px;
+    font-weight: bold;
+    
+}
+.director-name {
+    font-weight: bold;
+}
+.director-name p{
+    color: rgba(20, 61, 138, 0.932);
+}
+.cast {
+    font-weight: bold;
+    
+}
+.cast p{
+    color: rgba(20, 61, 138, 0.932);
+}
+.content p {
+    margin-top: 80px;
+    color: rgba(20, 61, 138, 0.932);
+}
+.fa-film{
+    color:rgb(201, 54, 54);
+}
+.fa-comments-o{
+    color:rgb(116, 148, 219);
+}
+//posts/new
+.flash-container {
+    animation: fadeOut 4s ease 0s 1 forwards;
+}
+.flash-not {
+    padding: 10px 0;
+    color: white;
+    background: rgb(251, 88, 88);
+    text-align: center;
+    position: absolute;
+    top: 64px;
+    z-index: 10;
+    width: 100%;
+    border-radius: 0 0 2px 2px;
+    font-size: 14px;
+}
+
+@keyframes fadeOut { /*animetion-nameで設定した値を書く*/
+
+    0% {opacity: 1
+        
+    } /*アニメーション開始時は不透明度0%*/
+  
+    100% {opacity: 0
+        
+    
+    } /*アニメーション終了時は不透明度100%*/
+}  
+
+  
+.form-heading {
+    text-align: center;
+    font-weight: bold;
+}
+.form-container {
+    background-image: url("1_edcBWoWrehHbS8nnNckhog.jpg");
+    background-size: cover;
+    color: whitesmoke;
+    text-align: center;
+    
+}
+.form-heading {
+    font-family: fantasy;
+    
+}
+
+.m-title {
+    border-radius: 10px;
+    margin-right: 50px;
+}
+.released-year{
+    border-radius: 10px;
+}
+.m-summary {
+    resize: none;
+    width:300px;
+    height:200px;
+    border-radius: 10px;
+}  
+.m-director{
+    border-radius: 10px;
+    margin-right: 40px;
+}
+
+.director-name p{
+    margin-top: 15px;
+}
+
+input[type="submit"] {
+    width: 200px;
+    font-size: 20px;
+    padding:10px;
+    margin-bottom: 30px;
+    background-color:rgb(216, 199, 199);
+    border-radius: 10px;
+    font-family: serif;
+  }
+
+.cast p{
+    margin-top: 10px;
+}
+.m-cast1 {
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-right: 40px;
+}
+.m-cast2 {
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-right: 40px;
+}
+.m-cast3 {
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-right: 40px;
+}
+.submit{
+    margin-left: 10px;
+}

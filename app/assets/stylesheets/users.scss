@@ -1,0 +1,26 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.icon_image {
+    width: 200px;
+    height: 200px;
+    //サイズ指定
+    border-radius: 100px;
+    //画像を丸くする
+    object-fit: cover;
+    //タテヨコ比を変えないままトリミング
+  }
+
+.user-profile {
+    text-align: center;
+}
+.mypage{
+  font-family: fantasy;
+}
+.mypost{
+  font-family: fantasy;
+  color:rgb(113, 113, 189);
+}
+.fa-trash {
+  color:rgb(53, 150, 241);
+}

@@ -1,0 +1,54 @@
+<header>
+    <div class="header-logo">
+      <%= link_to("TOP","/",class: "logox")%>
+    </div>
+    <div class="header-right">
+      
+    </div>
+  </header>
+<div class="signup-wrapper">
+
+ <div class="signup-content">
+  <h2>Let`s Make Acount</h2>
+
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+    <div class="field">
+      <%= f.label :UserName %><br />
+      <%= f.text_field :user_name,class: "user-name-form" %>
+    </div>
+
+    <div class="field">
+      <%= f.label :icon%><br />
+      <%= f.file_field :image_name %>
+    </div>
+
+
+    <div class="field">
+      <%= f.label :email %><br />
+      <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    </div>
+
+    <div class="field">
+      <%= f.label :password %>
+      <% if @minimum_password_length %>
+      <em>(<%= @minimum_password_length %> characters minimum)</em>
+      <% end %><br />
+      <%= f.password_field :password, autocomplete: "new-password" %>
+    </div>
+
+    <div class="field">
+      <%= f.label :password_confirmation %><br />
+      <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit "Sign up" ,class:"btn-signup"%>
+    </div>
+  <% end %>
+  <%= render "devise/shared/links" %>
+ </div>
+</div>
+
+

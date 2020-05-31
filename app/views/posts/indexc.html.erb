@@ -1,0 +1,61 @@
+<header>
+    <div class="header-logo">
+      <%= link_to("TOP","/",class: "logox")%>
+    </div>
+     <div class="header-linklist">
+      <div class="header-link1">
+        <%= link_to("日本映画・ドラマ","indexa",class: "btn-y")%>
+      </div>
+      <div class="header-link2">
+        <%= link_to("韓国映画・ドラマ","indexb",class: "btn-y")%>
+      </div>
+      <div class="header-link3">
+        <%= link_to("海外映画","indexd",class: "btn-y")%>
+      </div>
+    </div>
+  </header>
+
+<div class="recommend">
+  <h1>海外ドラマおすすめ一覧</h1>
+</div>
+ <div class="post-index">
+  <div class="container">
+    <% @postc.each do |post| %>
+     <div class="row">
+      <div class="col-sm-5">
+       <div class="user-linkx">
+         <img src=<%= post.user.image_name %> class = "icon_imagex">
+         <%= link_to(post.user.user_name,"/users/#{post.user.id}",class: "user-linkname")%>
+       </div>
+        <div class="title-name">
+          <span class="fa fa-film"></span><%= post.title%>
+        </div>
+        <div class="year-name">
+          <%= post.released_year%><span>年</span>
+        </div>
+        <div class="image-name">
+          <%= image_tag post.image_url  %>
+        </div>
+      </div>
+      <div class="col-sm-7">
+       <div class="content">
+          <p><span class="fa fa-comments-o"></span> あらすじ・感想 <span class="fa fa-comments-o"></span></p>
+          <%= post.summary%>
+        </div>
+        <div class="director-name">
+          <P><span class="fas fa-user-secret"></span> 監督名</P>
+          <%= post.director%>
+        </div>
+        <div class="cast">
+          <p><span class="fas fa-group"> キャスト名</p>
+          <%= post.cast%><br>
+          <%= post.casta%><br>
+          <%= post.castb%>
+        </div><br>
+        <%= post.created_at.to_s(:datetime_jp) %>
+       </div>
+      </div>
+      <hr>
+    <% end %>
+  </div>
+ </div>

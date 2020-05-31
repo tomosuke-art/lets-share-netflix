@@ -1,0 +1,70 @@
+.logox{
+    color:white;
+}
+.signup-wrapper{
+    height:800px;
+    position: relative;
+    background-image: url("スクリーンショット 2020-05-14 1.53.01");
+    background-size: cover;
+    text-align: center;
+
+}
+.signup-wrapper h2{
+    font-family: fantasy;
+    font-weight: bold;
+    font-size: 40px;
+    color:rgb(126, 84, 84);
+}
+.signup-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.user-name-form {
+    margin-right: 40px;
+}
+.field{
+    font-family:serif;
+}
+input[type="text"]{
+    width:250px;
+    height:30px;
+    border-radius: 10px;
+    background-color:rgb(238, 228, 228);
+    margin-left: 45px;
+}
+input[type="email"]{
+    width:250px;
+    height:30px;
+    border-radius: 10px;
+    background-color:rgb(238, 228, 228);
+}
+input[type="password"]{
+    width:250px;
+    height:30px;
+    border-radius: 10px;
+    background-color:rgb(238, 228, 228);
+}
+.actions {
+    margin-top: 20px;
+}
+
+.user_editpage{
+    text-align: center;
+    background-image: url("watch-netflix-on-tv.jpg");
+    background-size: cover;
+    color:rgb(100, 241, 183);
+}
+.user_editpage h2{
+    color:black;
+    font-family: fantasy;
+}
+.form-controlx{
+    text-align: center;
+    margin-right: 50px;
+}
+.introducespace{
+    margin-right: 50px;
+}

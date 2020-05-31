@@ -1,0 +1,59 @@
+
+<div class="flash-container">
+   <% if flash[:postfalse]%>
+          <div class="flash-not">
+            <%= flash[:postfalse] %>
+          </div>
+   <% end %>
+</div>
+<div class="posts-new">
+  <div class="form-container">
+    <h1 class="form-heading">Tell Your Favotite！</h1>
+    <div class="form-content">
+       <%= form_with model: @post,url: {controller:'posts',action: 'create'},local: true  do |form| %>
+        
+         <%= form.radio_button :genre, :"日本映画・ドラマ"%>
+         <%= form.label :genre,"日本映画・ドラマ",{style: "display: inline-block;"}%>
+         <%= form.radio_button :genre, :"韓国映画・ドラマ"%>
+         <%= form.label :genre,"韓国映画・ドラマ",{style: "display: inline-block;"}%>
+         <%= form.radio_button :genre, :"海外ドラマ"%>
+         <%= form.label :genre,"海外ドラマ",{style: "display: inline-block;"}%>
+         <%= form.radio_button :genre, :"海外映画"%>
+         <%= form.label :genre,"海外映画",{style: "display: inline-block;"}%>
+           <br>
+           <br>
+         <%= form.label :title,"~タイトル~ " %><br>
+         <%= form.text_field :title,class:"m-title",size:"40" %>
+           <br>
+           <br>
+         <%= form.label :released_year,"~公開年~"%><br>
+         <%= form.number_field :released_year,class:"released-year",min: 1980,max: 2020%>
+           <br>
+           <br>
+         <%= form.label :image,"~画像~"%><br>
+         <%= form.file_field :image %>
+           <br>
+           <br>
+         <%= form.label :summary,"~あらすじ・レビュー~"%><br>
+         <%= form.text_area :summary,class:"m-summary",size:"40x20"%>
+           <br>
+           <br>
+         <%= form.label :director,"~監督名~"%><br>
+         <%= form.text_field :director,class:"m-director",size: 40%>
+           <br>
+           <br>
+         <%= form.label :cast,"~キャスト名~"%><br>
+         <%= form.text_field :cast,class:"m-cast1",size: 40%><br>
+         <%= form.text_field :casta,class:"m-cast2",size: 40%><br>
+         <%= form.text_field :castb,class:"m-cast3",size: 40%>
+           <br> 
+           <br>
+         <div class="m-submit">
+            <%= form.submit "投稿",class:"submit"%>
+         </div>
+       <%end%>
+    </div>
+  </div>
+</div>
+
+

@@ -1,0 +1,8 @@
+<h1>ユーザー一覧</h1>
+<p>Find me in app/views/users/index.html.erb</p>
+
+<% @users.each do |user| %>
+  <hr>
+  <img src=<%= @user.image_name %> class = "icon_image">
+  <p><span>email: </span><%=link_to user.email, user_path(user.id) %></p>
+<% end %>
