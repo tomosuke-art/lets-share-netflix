@@ -19,7 +19,7 @@
     }
     .allgenre p {
         font-size: 15px;
-        margin-bottom: 50px;
+        margin-bottom: 15px;
     }
     .message p{
         font-size: 15px;
@@ -43,6 +43,35 @@
     .btn-sf-like:hover {
         text-shadow: -6px 0px 15px rgba(255, 255, 240, 0.83),
                      6px 0px 15px rgba(255, 255, 240, 0.83);
+    }
+
+    //post.scss
+    .container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: 15px;
+    }
+    .recommend h1 {
+        padding-top: 20px;
+        font-weight: bold;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    //sessions-login
+    label {
+        display: inline-block;
+        margin-bottom: .5rem;
+        margin-right: 130px;
+    }
+    .login-wrapper {
+        height: 600px;
+        text-align: center;
+        position: relative;
+        background-image: url(joker-joaquin-phoenix-heath-ledger.jpg);
+        background-size: cover;
     }
 
 
