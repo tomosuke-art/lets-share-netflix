@@ -1,22 +1,36 @@
 <header>
-      <div class="header-logo">
-        <%= link_to "/"  do%>
-          <i class="fa fa-home fa-2x"></i>
-        <%end%>
-      </div>
-    <div class="header-linklist">
-      
-      <div class="header-link1">
-        <%= link_to("日本映画・ドラマ","indexa",class: "btn-y")%>
-      </div>
-      <div class="header-link2">
-        <%= link_to("海外ドラマ","indexc",class: "btn-y")%>
-      </div>
-      <div class="header-link3">
-        <%= link_to("海外映画","indexd",class: "btn-y")%>
-      </div>
-    </div>
-  </header>
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+     <div class="header-logo">
+       <%= link_to "/"  do%>
+         <i class="fa fa-home fa-2x"></i>
+       <%end%>
+     </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+       <div class="header-link1">
+         <%= link_to("日本映画・ドラマ","indexa",class: "btn-y")%>
+       </div>
+      </li>
+      <li class="nav-item">
+        <div class="header-link2">
+          <%= link_to("海外ドラマ","indexc",class: "btn-y")%>
+        </div>
+      </li>
+      <li class="nav-item">
+        <div class="header-link3">
+           <%= link_to("海外映画","indexd",class: "btn-y")%>
+        </div>   
+      </li>
+    </ul>
+    
+  </div>
+ </nav> 
+</header>
 
 <div class="recommend">
   <h1>韓国映画・ドラマおすすめ一覧</h1>
