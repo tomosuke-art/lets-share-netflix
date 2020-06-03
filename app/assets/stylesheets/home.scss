@@ -9,14 +9,6 @@ header {
     background-color:rgb(29, 33, 87)
    
 }
-.menu-icon {
-    color: white;
-    float: right;
-    font-size: 25px;
-    padding: 21px 0;
-    /* displayをnoneに指定してください */
-    display:none;
-  }
 .search {
     display: flex;
 }
@@ -89,7 +81,7 @@ header {
     background-color:rgba(255, 255, 255, 0.5) ;
 }
 .nav-link {
-    line-height: 60px;
+    line-height: 65px;
     padding:0 25px;
     color:black;
     display:block;
@@ -112,7 +104,7 @@ header {
     background-color: rgba(255, 255, 255, 0.5);
 }
 .mypage-link{
-    line-height: 60px;
+    line-height: 80px;
     padding:0 25px;
     color:black;
     display:block;
