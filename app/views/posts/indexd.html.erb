@@ -41,7 +41,7 @@
      <div class="row">
       <div class="col-sm-5">
        <div class="user-linkx">
-        <img src=<%= post.user.image_name %> class = "icon_imagex">
+        <img src=<%= post.user.image_name.url %> class = "icon_imagex">
         <%= link_to(post.user.user_name,"/users/#{post.user.id}",class: "user-linkname")%>
        </div>
         <div class="title-name">

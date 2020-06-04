@@ -19,11 +19,7 @@
   <p> User Profile</p>
  </div>
   <hr>
-  <% if @user.image_name? %>
-     <img src=<%= @user.image_name %> class = "icon_image">
-  <% else %>
-    <img src="/assets/default.png" class="icon_image" alt="ユーザーアイコン" >
-  <% end %> 
+ <img src=<%= post.user.image_name.url %> class = "icon_imagex">
   <p><%= @user.user_name%></p>
   <p><%= @user.email %></p>
   <P><%= @user.introduce%></P>
