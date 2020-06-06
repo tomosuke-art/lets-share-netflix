@@ -3,9 +3,9 @@ class PostsController < ApplicationController
   def index
     @posts=Post.all.order(created_at: :desc)
     if params[:search] == nil
-      @posts= Post.all
+      @posts= Post.all.order(created_at: :desc)
     elsif params[:search] == ''
-      @posts= Post.all
+      @posts= Post.all.order(created_at: :desc)
     else
       #部分検索
       @posts = Post.where("title LIKE ? ",'%' + params[:search] + '%')
@@ -14,21 +14,29 @@ class PostsController < ApplicationController
 
   def indexa
     @posta=Post.where(genre: '日本映画・ドラマ' )
+    @posta=Post.all.order(created_at: :desc)
+
 
   end
     
   def indexb
     @postb=Post.where(genre: '韓国映画・ドラマ')
+    @postb=Post.all.order(created_at: :desc)
+
 
   end
 
   def indexc
     @postc=Post.where(genre: '海外ドラマ')
+    @postc=Post.all.order(created_at: :desc)
+
 
   end
 
   def indexd
     @postd=Post.where(genre: '海外映画')
+    @postd=Post.all.order(created_at: :desc)
+
 
   end
 
