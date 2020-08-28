@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Lets share my favorite! ~Netflix~
 
-Things you may want to cover:
+please check the URL !!
+My first Delivarable of　programming !!
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+You can see information about works posted by other users on this website !!
+Please tell us your recommended work !!
